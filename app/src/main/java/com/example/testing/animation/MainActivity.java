@@ -1,5 +1,6 @@
 package com.example.testing.animation;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -38,11 +39,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btn_load:
                 //startFrameAnimationXml();
-                startFrameAnimationJava();
+                //startFrameAnimationJava();
+                jump();
                 break;
             default:
                 break;
         }
+    }
+
+    private void jump(){
+        Intent intent=new Intent(this,RotateAnimActivity.class);
+        startActivity(intent);
     }
 
     /**
