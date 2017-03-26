@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AnimationTest</string>
+    <string name="text_btn_load">start loading</string>
+</resources>
